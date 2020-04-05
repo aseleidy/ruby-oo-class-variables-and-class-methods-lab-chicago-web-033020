@@ -40,10 +40,11 @@ class Song
   end 
   
   def self.artist_count
-    self.artists.map do |artist|
+    self.artists.each do |artist|
       song_count = @@artists.count(artist)
       @@artist_count[artist] = song_count
     end 
+    @@artist_count
   end 
   
 end 
