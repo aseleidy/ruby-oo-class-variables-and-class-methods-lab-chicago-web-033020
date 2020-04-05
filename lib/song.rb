@@ -37,5 +37,6 @@ class Song
       genre_count =  @@genres.count(genre)
       @@genre_count[genre] = genre_count
     end 
+    @@genre_count
   end 
 end 
