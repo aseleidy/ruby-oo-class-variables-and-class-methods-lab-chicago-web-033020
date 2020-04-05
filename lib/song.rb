@@ -36,7 +36,7 @@ class Song
       genre_count =  @@genres.count(genre)
       @@genre_count[genre] = genre_count
     end 
-    binding.pry
     @@genre_count
   end 
+  
 end 
